@@ -1,0 +1,12 @@
+D:\Xamarin\TodoASMX\TodoASMX\bin\Debug\TodoASMX.dll
+D:\Xamarin\TodoASMX\TodoASMX\bin\Debug\TodoASMX.pdb
+D:\Xamarin\TodoASMX\TodoASMX\bin\Debug\Xamarin.Forms.Core.dll
+D:\Xamarin\TodoASMX\TodoASMX\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Xamarin\TodoASMX\TodoASMX\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Xamarin\TodoASMX\TodoASMX\bin\Debug\Xamarin.Forms.Core.xml
+D:\Xamarin\TodoASMX\TodoASMX\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Xamarin\TodoASMX\TodoASMX\obj\Debug\TodoASMX.csprojResolveAssemblyReference.cache
+D:\Xamarin\TodoASMX\TodoASMX\obj\Debug\TodoASMX.Views.TodoListPage.xaml.g.cs
+D:\Xamarin\TodoASMX\TodoASMX\obj\Debug\TodoASMX.Views.TodoItemPage.xaml.g.cs
+D:\Xamarin\TodoASMX\TodoASMX\obj\Debug\TodoASMX.dll
+D:\Xamarin\TodoASMX\TodoASMX\obj\Debug\TodoASMX.pdb

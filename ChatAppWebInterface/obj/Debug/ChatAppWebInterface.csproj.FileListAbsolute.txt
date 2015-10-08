@@ -1,0 +1,6 @@
+D:\Xamarin\ChatApp\ChatAppWebInterface\bin\ChatAppWebInterface.dll
+D:\Xamarin\ChatApp\ChatAppWebInterface\bin\ChatAppWebInterface.pdb
+D:\Xamarin\ChatApp\ChatAppWebInterface\bin\ChatAppService.dll
+D:\Xamarin\ChatApp\ChatAppWebInterface\bin\ChatAppService.pdb
+D:\Xamarin\ChatApp\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.dll
+D:\Xamarin\ChatApp\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.pdb

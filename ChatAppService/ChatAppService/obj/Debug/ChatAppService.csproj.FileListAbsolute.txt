@@ -1,0 +1,16 @@
+D:\Xamarin\TodoASMX\TodoASMXService\TodoASMXService\obj\Debug\ChatAppService.csprojResolveAssemblyReference.cache
+D:\Xamarin\TodoASMX\TodoASMXService\TodoASMXService\bin\TodoASMXService.dll
+D:\Xamarin\TodoASMX\TodoASMXService\TodoASMXService\bin\TodoASMXService.pdb
+D:\Xamarin\TodoASMX\TodoASMXService\TodoASMXService\obj\Debug\TodoASMXService.dll
+D:\Xamarin\TodoASMX\TodoASMXService\TodoASMXService\obj\Debug\TodoASMXService.pdb
+D:\Xamarin\TodoASMX\ChatAppService\ChatAppService\bin\ChatAppService.dll
+D:\Xamarin\TodoASMX\ChatAppService\ChatAppService\bin\ChatAppService.pdb
+D:\Xamarin\TodoASMX\ChatAppService\ChatAppService\obj\Debug\ChatAppService.dll
+D:\Xamarin\TodoASMX\ChatAppService\ChatAppService\obj\Debug\ChatAppService.pdb
+D:\Xamarin\TodoASMX\ChatAppService\ChatAppService\obj\Debug\ChatAppService.csprojResolveAssemblyReference.cache
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\ChatAppService.dll
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\ChatAppService.pdb
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\System.Data.dll
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.csprojResolveAssemblyReference.cache
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.dll
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.pdb

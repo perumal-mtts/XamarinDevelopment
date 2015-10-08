@@ -1,0 +1,4 @@
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\ChatAppService.dll
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\ChatAppService.pdb
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Release\ChatAppService.dll
+D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Release\ChatAppService.pdb
