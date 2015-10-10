@@ -8,9 +8,24 @@ namespace ChatApp
 		public static UserManager UserManager { get; set; }
 		public static User LoggedUser { get; set; }
 
+		private static App _app;
+		public static App Instance
+		{
+			get
+			{
+				if (_app == null) 
+				{
+					_app = new App ();
+				}
+
+				return _app;
+			}
+		}
+
 		public App ()
 		{
-			MainPage = new NavigationPage (new HomePage ());
+			_app = this;
+			MainPage = new MyNavigationPage (new HomePage ());
 		}
 
 		protected override void OnStart ()
@@ -27,5 +42,19 @@ namespace ChatApp
 		{
 			// Handle when your app resumes
 		}
+
+		public bool DoBack
+		{
+			get
+			{
+				NavigationPage mainPage = App.Instance.MainPage as NavigationPage;
+				if (mainPage != null)
+				{
+					return mainPage.Navigation.NavigationStack.Count > 1;
+				}
+				return true;                
+			}
+		}
+
 	}
 }

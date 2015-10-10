@@ -11,6 +11,5 @@ D:\Xamarin\TodoASMX\ChatAppService\ChatAppService\obj\Debug\ChatAppService.cspro
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\ChatAppService.dll
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\ChatAppService.pdb
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\System.Data.dll
-D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.csprojResolveAssemblyReference.cache
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.dll
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.pdb

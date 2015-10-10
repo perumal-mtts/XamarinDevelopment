@@ -38,9 +38,19 @@ namespace ChatApp
 			soapService.SendFriendRequest (request);
 		}
 
-		public List<User> GetMyRequests(string fromUserId)
+		public void ApproveFriendRequest(FriendRequest request)
+		{
+			soapService.ApproveFriendRequest (request);
+		}
+
+		public List<User> GetRequests(string fromUserId)
 		{
 			return soapService.GetMyRequests (fromUserId);
+		}
+
+		public List<User> GetMyFriends(string userId)
+		{
+			return soapService.GetMyFriends (userId);
 		}
 	}
 }

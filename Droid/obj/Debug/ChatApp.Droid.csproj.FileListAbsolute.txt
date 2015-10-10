@@ -40,9 +40,9 @@ D:\Xamarin\ChatApp\Droid\bin\Debug\Xamarin.Forms.Xaml.dll
 D:\Xamarin\ChatApp\Droid\bin\Debug\Xamarin.GooglePlayServices.Base.dll
 D:\Xamarin\ChatApp\Droid\bin\Debug\Xamarin.GooglePlayServices.Gcm.dll
 D:\Xamarin\ChatApp\Droid\bin\Debug\ChatApp.pdb
-D:\Xamarin\ChatApp\Droid\bin\Debug\Newtonsoft.Json.xml
 D:\Xamarin\ChatApp\Droid\bin\Debug\Xamarin.Forms.Core.xml
 D:\Xamarin\ChatApp\Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Xamarin\ChatApp\Droid\bin\Debug\Newtonsoft.Json.xml
 D:\Xamarin\ChatApp\Droid\obj\Debug\ChatApp.Droid.csprojResolveAssemblyReference.cache
 D:\Xamarin\ChatApp\Droid\obj\Debug\ChatApp.Droid.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\ChatApp.Droid.pdb

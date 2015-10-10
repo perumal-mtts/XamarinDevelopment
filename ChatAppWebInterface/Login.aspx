@@ -9,12 +9,28 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Email Id : 
-            <asp:TextBox ID="txtLogin" runat="server"></asp:TextBox>
-            Password :
-            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-            <asp:Button ID="btnLogin" runat="server" Text="Button" OnClick="btnLogin_Click" />
-            <asp:Label ID="lblInfo" runat="server"></asp:Label>
+            <table>
+                <tr>
+                    <td>Email Id : </td>
+                    <td>
+                        <asp:TextBox ID="txtLogin" runat="server"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td>
+                        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="lblInfo" runat="server"></asp:Label>
+                </tr>
+
+            </table>
+
         </div>
     </form>
 </body>

@@ -50,6 +50,21 @@ namespace ChatAppService.Services
 				throw new ArgumentNullException("user");
 			}
 
+			if (string.IsNullOrEmpty(user.Name))
+			{
+				throw new InvalidOperationException("User name is required");
+			}
+
+			if (string.IsNullOrEmpty(user.EmailId))
+			{
+				throw new InvalidOperationException("EmailId is required");
+			}
+
+			if (string.IsNullOrEmpty(user.Password))
+			{
+				throw new InvalidOperationException("Password is required");
+			}
+
 			_repository.Insert(user);
 		}
 
@@ -99,6 +114,11 @@ namespace ChatAppService.Services
 		public List<User> GetRequests(string fromUserId)
 		{
 			return _repository.GetRequests(fromUserId);
+		}
+
+		public List<User> GetMyFriends(string userId)
+		{
+			return _repository.GetMyFriends(userId);
 		}
 	}
 }

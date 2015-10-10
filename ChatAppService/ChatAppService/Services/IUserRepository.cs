@@ -19,5 +19,6 @@ namespace ChatAppService.Services
 		void UpdateFriendRequest(FriendRequest friendRequest);
 		User IsValidUser(string emailId, string password);
 		List<User> GetRequests (string fromUserId);
+		List<User> GetMyFriends (string userId);
 	}
 }

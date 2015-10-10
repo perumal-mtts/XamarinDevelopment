@@ -6,6 +6,7 @@
 		<StackLayout VerticalOptions="StartAndExpand">
 			<Button Text="Login" Clicked="LoginClickHandler" />
 			<Button Text="Register" Clicked="RegisterClickHandler" />
+
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

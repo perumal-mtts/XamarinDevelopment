@@ -4,6 +4,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
+using ChatAppService.Services;
 
 namespace MessageSender
 {
@@ -14,6 +15,14 @@ namespace MessageSender
 
 		static void Main(string[] args)
 		{
+
+			UserService se = new UserService(new UserRepository());
+			se.ApproveFriendRequest(new ChatAppService.Models.FriendRequest()
+			{
+				FromUserId = "89",
+				ToUserId ="0"
+			});
+
 			var jGcmData = new JObject();
 			var jData = new JObject();
 
@@ -38,7 +47,10 @@ namespace MessageSender
 							{
 								Console.WriteLine(response);
 								Console.WriteLine("Message sent: check the client device notification tray.");
+								Console.ReadLine();
+
 							}));
+
 				}
 			}
 			catch (Exception e)

@@ -33,11 +33,12 @@ namespace ChatApp
 			switch (selectedOption)
 			{
 				case "Update Profile":
-				case "My Friends":
+				
 				case "ChangePassword":
 				case "Logout":
 					{
-						DisplayAlert("Chat App", "To be implemented", "Ok");
+						App.LoggedUser = null;
+						Navigation.PopToRootAsync ();
 					}
 					break;
 				case "My Requests":
@@ -50,6 +51,13 @@ namespace ChatApp
 						Navigation.PushAsync(new UserListPage());
 					}
 					break;
+
+				case "My Friends":
+					{
+						Navigation.PushAsync(new MyFriends());
+					}
+					break;
+
 				default:
 					break;
 			}

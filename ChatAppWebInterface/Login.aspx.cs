@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using ChatAppService.Models;
 using ChatAppService;
+using System.Web.Security;
 
 namespace ChatAppWebInterface
 {
@@ -21,9 +22,16 @@ namespace ChatAppWebInterface
 			User user = new User();
 			user.EmailId = txtLogin.Text;
 			user.Password = txtPassword.Text;
+
 			UserService userService = new UserService();
-			if (userService.GetValidUser(user) != null)
+
+			var loggedUser = userService.GetValidUser(user) ;
+
+			if (loggedUser != null)
 			{
+				Session["loggedUser"] = loggedUser;
+
+				Response.Redirect("Users.aspx");
 				lblInfo.Text = "Successfully Logged";
 			}
 			else

@@ -15,6 +15,7 @@ namespace ChatApp
 			var user = new User ();
 			var page = new LoginPage ();
 			page.BindingContext = user;
+			Navigation.PopAsync ();
 			Navigation.PushAsync (page);
 		}
 

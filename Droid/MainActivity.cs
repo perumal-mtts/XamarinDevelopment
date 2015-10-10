@@ -11,6 +11,7 @@ namespace ChatApp.Droid
 	[Activity (Label = "ChatApp", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
 	{
+		string message ;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -27,16 +28,18 @@ namespace ChatApp.Droid
 			LoadApplication (new App ());
 		}
 
+
+
 		public bool IsPlayServicesAvailable()
 		{
 			int resultCode = GooglePlayServicesUtil.IsGooglePlayServicesAvailable(this);
 			if (resultCode != ConnectionResult.Success)
 			{
 				if (GooglePlayServicesUtil.IsUserRecoverableError(resultCode))
-					this.Title = GooglePlayServicesUtil.GetErrorString(resultCode);
+					message = GooglePlayServicesUtil.GetErrorString(resultCode);
 				else
 				{
-					this.Title = "Sorry, this device is not supported";
+					message = "Sorry, this device is not supported";
 					Finish();
 				}
 				
@@ -44,7 +47,7 @@ namespace ChatApp.Droid
 			}
 			else
 			{
-				this.Title = "Google Play Services is available.";
+				message = "Google Play Services is available.";
 				return true;
 			}
 		}

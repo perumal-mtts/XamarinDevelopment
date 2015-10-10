@@ -15,6 +15,10 @@ namespace ChatApp
 
 		void SendFriendRequest (FriendRequest friendRequest);
 
+		void ApproveFriendRequest (FriendRequest friendRequest);
+
 		List<User> GetMyRequests (string fromUserId);
+
+		List<User> GetMyFriends (string userId);
 	}
 }

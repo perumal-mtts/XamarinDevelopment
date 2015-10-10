@@ -39,7 +39,7 @@ namespace ChatAppService.Services
 			{
 				_userList.Add(item);
 				connection.Open();
-				command = new MySqlCommand("INSERT INTO chatapp.user (Id, Name, EmailId, Password) VALUES ('" + item.ID + "', '" + item.Name + "', '" + item.EmailId + "', '" + item.Password + "')", connection);
+				command = new MySqlCommand("INSERT INTO user (Id, Name, EmailId, Password) VALUES ('" + item.ID + "', '" + item.Name + "', '" + item.EmailId + "', '" + item.Password + "')", connection);
 				command.ExecuteNonQuery();
 			}
 			catch (Exception ex)
@@ -48,8 +48,15 @@ namespace ChatAppService.Services
 			}
 			finally
 			{
-				connection.Close();
-				reader.Close();
+				if (reader != null
+					&& reader.IsClosed == false)
+				{
+					reader.Close();
+				}
+				if (connection != null && connection.State == System.Data.ConnectionState.Open)
+				{
+					connection.Close();
+				}
 			}
 		}
 
@@ -73,7 +80,10 @@ namespace ChatAppService.Services
 			finally
 			{
 				command = null;
-				connection.Close();
+				if (connection != null && connection.State == System.Data.ConnectionState.Open)
+				{
+					connection.Close();
+				}
 			}
 		}
 
@@ -106,8 +116,15 @@ namespace ChatAppService.Services
 			}
 			finally
 			{
-				connection.Close();
-				reader.Close();
+				if (reader != null
+					&& reader.IsClosed == false)
+				{
+					reader.Close();
+				}
+				if (connection != null && connection.State == System.Data.ConnectionState.Open)
+				{
+					connection.Close();
+				}
 			}
 		}
 
@@ -116,7 +133,7 @@ namespace ChatAppService.Services
 			try
 			{
 				connection.Open();
-				command = new MySqlCommand("INSERT INTO chatapp.friendrequest (FromUserId, ToUserId, Status) VALUES (" + friendRequest.FromUserId + ", " + friendRequest.ToUserId + ", " + (int)friendRequest.Status + ");", connection);
+				command = new MySqlCommand("INSERT INTO friendrequest (FromUserId, ToUserId, Status) VALUES (" + friendRequest.FromUserId + ", " + friendRequest.ToUserId + ", " + (int)friendRequest.Status + ");", connection);
 				command.ExecuteNonQuery();
 			}
 			catch (Exception ex)
@@ -125,8 +142,15 @@ namespace ChatAppService.Services
 			}
 			finally
 			{
-				connection.Close();
-				reader.Close();
+				if (reader != null
+						&& reader.IsClosed == false)
+				{
+					reader.Close();
+				}
+				if (connection != null && connection.State == System.Data.ConnectionState.Open)
+				{
+					connection.Close();
+				}
 			}
 		}
 
@@ -135,7 +159,7 @@ namespace ChatAppService.Services
 			try
 			{
 				connection.Open();
-				command = new MySqlCommand("UPDATE chatapp.friendrequest SET Status = " + (int)friendRequest.Status + " WHERE friendrequest.FromUserId = " + friendRequest.FromUserId + " AND friendrequest.ToUserId = " + friendRequest.ToUserId + "; ", connection);
+				command = new MySqlCommand("UPDATE friendrequest SET Status = " + (int)friendRequest.Status + " WHERE friendrequest.FromUserId = " + friendRequest.FromUserId + " AND friendrequest.ToUserId = " + friendRequest.ToUserId + "; ", connection);
 				command.ExecuteNonQuery();
 			}
 			catch (Exception ex)
@@ -144,8 +168,15 @@ namespace ChatAppService.Services
 			}
 			finally
 			{
-				connection.Close();
-				reader.Close();
+				if (reader != null
+					&& reader.IsClosed == false)
+				{
+					reader.Close();
+				}
+				if (connection != null && connection.State == System.Data.ConnectionState.Open)
+				{
+					connection.Close();
+				}
 			}
 		}
 
@@ -162,7 +193,48 @@ namespace ChatAppService.Services
 				List<User> requestedUsers = new List<User>();
 
 				connection.Open();
-				command = new MySqlCommand("select *from friendrequest where FromUserId = '" + fromUserId + "'", connection);
+				command = new MySqlCommand("select *from friendrequest where ToUserId = '" + fromUserId + "'", connection);
+				reader = command.ExecuteReader();
+
+				while (reader.Read())
+				{
+					FriendRequest request = new FriendRequest();
+					request.FromUserId = reader.GetString("FromUserId");
+					request.ToUserId = reader.GetString("ToUserId");
+					requests.Add(request);
+					requestedUsers.Add(_userList.FirstOrDefault(x => x.ID == request.FromUserId));
+				}
+
+				return requestedUsers;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+			finally
+			{
+				if (reader != null 
+					&& reader.IsClosed == false)
+				{
+					reader.Close();
+				}
+				if (connection != null && connection.State == System.Data.ConnectionState.Open)
+				{
+					connection.Close();
+				}
+			}
+		}
+
+
+		public List<User> GetMyFriends(string userId)
+		{
+			try
+			{
+				List<FriendRequest> requests = new List<FriendRequest>();
+				List<User> requestedUsers = new List<User>();
+
+				connection.Open();
+				command = new MySqlCommand("select *from friendrequest where Status ="+ (int)FriendRequestStatus.Approved + " and FromUserId = '" + userId + "'", connection);
 				reader = command.ExecuteReader();
 
 				while (reader.Read())
@@ -174,6 +246,20 @@ namespace ChatAppService.Services
 					requestedUsers.Add(_userList.FirstOrDefault(x => x.ID == request.ToUserId));
 				}
 
+				reader.Close();
+
+				command = new MySqlCommand("select *from friendrequest where Status ="+ (int)FriendRequestStatus.Approved + " and ToUserId = '" + userId + "'", connection);
+				reader = command.ExecuteReader();
+
+				while (reader.Read())
+				{
+					FriendRequest request = new FriendRequest();
+					request.FromUserId = reader.GetString("FromUserId");
+					request.ToUserId = reader.GetString("ToUserId");
+					requests.Add(request);
+					requestedUsers.Add(_userList.FirstOrDefault(x => x.ID == request.FromUserId));
+				}
+
 				return requestedUsers;
 			}
 			catch (Exception ex)
@@ -182,10 +268,16 @@ namespace ChatAppService.Services
 			}
 			finally
 			{
-				connection.Close();
-				reader.Close();
+				if (reader != null 
+					&& reader.IsClosed == false)
+				{
+					reader.Close();
+				}
+				if (connection != null && connection.State == System.Data.ConnectionState.Open)
+				{
+					connection.Close();
+				}
 			}
-
 		}
 	}
 }

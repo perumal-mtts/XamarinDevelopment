@@ -150,5 +150,51 @@ namespace ChatApp.Droid
 				throw ex;
 			}
 		}
+
+
+		public void ApproveFriendRequest(FriendRequest friendRequest)
+		{
+			try
+			{
+				userService.ApproveFriendRequest(Helper.ConvertToFriendRequest(friendRequest));
+			}
+			catch (SoapException se)
+			{
+				Debug.WriteLine(@"				{0}", se.Message);
+				throw se;
+			}
+			catch (Exception ex)
+			{
+				Debug.WriteLine(@"				ERROR {0}", ex.Message);
+				throw ex;
+			}
+		}
+
+		public List<User> GetMyFriends(string userId)
+		{
+			try
+			{
+				List<User> myRequests = new List<User>();
+
+				var requests  = userService.GetMyFriends(userId);
+
+				foreach (var item in requests)
+				{
+					myRequests.Add(Helper.ConvertToUserModel(item));
+				}
+
+				return myRequests;
+			}
+			catch (SoapException se)
+			{
+				Debug.WriteLine(@"				{0}", se.Message);
+				throw se;
+			}
+			catch (Exception ex)
+			{
+				Debug.WriteLine(@"				ERROR {0}", ex.Message);
+				throw ex;
+			}
+		}
 	}
 }
