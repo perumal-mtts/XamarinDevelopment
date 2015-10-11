@@ -9,7 +9,7 @@ using ChatAppService.Services;
 
 namespace ChatAppService
 {
-	[WebService(Namespace = "http://10.97.75.50/ChatAppWebInterface/UserService.asmx")]
+    [WebService(Namespace = "http://tempuri.org/")]
 	[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 	[ToolboxItem(false)]
 	public class UserService : System.Web.Services.WebService

@@ -19,25 +19,36 @@ namespace ChatAppWebInterface
 
 		protected void btnLogin_Click(object sender, EventArgs e)
 		{
-			User user = new User();
-			user.EmailId = txtLogin.Text;
-			user.Password = txtPassword.Text;
+            try
+            {
+                User user = new User();
+                user.EmailId = txtLogin.Text;
+                user.Password = txtPassword.Text;
 
-			UserService userService = new UserService();
+                UserService userService = new UserService();
 
-			var loggedUser = userService.GetValidUser(user) ;
+                var loggedUser = userService.GetValidUser(user);
 
-			if (loggedUser != null)
-			{
-				Session["loggedUser"] = loggedUser;
+                if (loggedUser != null)
+                {
+                    Session["loggedUser"] = loggedUser;
 
-				Response.Redirect("Users.aspx");
-				lblInfo.Text = "Successfully Logged";
-			}
-			else
-			{
-				lblInfo.Text = "Error";
-			}
+                    Response.Redirect("UserList.aspx");
+                }
+                else
+                {
+                    lblInfo.Text = "Invalid credentials";
+                }
+            }
+            catch (Exception ex)
+            {
+                lblInfo.Text = "Something went wrong..!!";
+            }
 		}
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Register.aspx");
+        }
 	}
 }

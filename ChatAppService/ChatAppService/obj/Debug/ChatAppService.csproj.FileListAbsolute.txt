@@ -13,3 +13,8 @@ D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\ChatAppService.pdb
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\bin\System.Data.dll
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.dll
 D:\Xamarin\ChatApp\ChatAppService\ChatAppService\obj\Debug\ChatAppService.pdb
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppService\ChatAppService\bin\ChatAppService.dll
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppService\ChatAppService\bin\ChatAppService.pdb
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppService\ChatAppService\bin\System.Data.dll
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppService\ChatAppService\obj\Debug\ChatAppService.dll
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppService\ChatAppService\obj\Debug\ChatAppService.pdb

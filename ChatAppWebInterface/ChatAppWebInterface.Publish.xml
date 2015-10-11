@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Anirudh" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="10/11/2015 21:31:02" />
+    <file relUrl="bin/ChatAppWebInterface.dll" publishTime="10/11/2015 21:17:03" />
+    <file relUrl="Logout.aspx" publishTime="10/10/2015 12:19:12" />
+    <file relUrl="bin/ChatAppService.dll" publishTime="10/11/2015 21:17:02" />
+    <file relUrl="WebService1.asmx" publishTime="10/11/2015 12:19:13" />
+    <file relUrl="Register.aspx" publishTime="10/11/2015 19:47:31" />
+    <file relUrl="UserList.aspx" publishTime="10/11/2015 19:45:41" />
+    <file relUrl="inner.Master" publishTime="10/11/2015 21:02:48" />
+    <file relUrl="css/style.css" publishTime="10/11/2015 19:06:50" />
+    <file relUrl="FriendList.aspx" publishTime="10/11/2015 19:19:50" />
+    <file relUrl="RequestsReceived.aspx" publishTime="10/11/2015 21:04:15" />
+    <file relUrl="UserService.asmx" publishTime="10/10/2015 11:16:40" />
+    <file relUrl="bin/ChatAppService.pdb" publishTime="10/11/2015 21:17:02" />
+    <file relUrl="Login.aspx" publishTime="10/11/2015 19:37:16" />
+    <file relUrl="bin/ChatAppWebInterface.pdb" publishTime="10/11/2015 21:17:03" />
+  </publishProfile>
+</publishData>

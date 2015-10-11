@@ -5,3 +5,10 @@ D:\Xamarin\ChatApp\ChatAppWebInterface\bin\ChatAppService.pdb
 D:\Xamarin\ChatApp\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.csprojResolveAssemblyReference.cache
 D:\Xamarin\ChatApp\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.dll
 D:\Xamarin\ChatApp\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.pdb
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.csprojResolveAssemblyReference.cache
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.dll
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppWebInterface\obj\Debug\ChatAppWebInterface.pdb
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppWebInterface\bin\ChatAppWebInterface.dll
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppWebInterface\bin\ChatAppWebInterface.pdb
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppWebInterface\bin\ChatAppService.dll
+D:\ChatApp\ChatApp\XamarinDevelopment\ChatAppWebInterface\bin\ChatAppService.pdb
