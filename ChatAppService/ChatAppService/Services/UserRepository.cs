@@ -19,6 +19,7 @@ namespace ChatAppService.Services
         {
             get
             {
+				InitializeData();
                 return _userList;
             }
         }
@@ -97,6 +98,7 @@ namespace ChatAppService.Services
             try
             {
                 _userList = new List<User>();
+
                 connection.Open();
                 command = new MySqlCommand("select *from user", connection);
                 reader = command.ExecuteReader();
@@ -255,7 +257,6 @@ namespace ChatAppService.Services
                 }
             }
         }
-
 
         public List<User> GetMyFriends(string userId)
         {

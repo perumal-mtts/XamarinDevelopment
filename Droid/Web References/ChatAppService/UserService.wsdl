@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://10.97.75.50/ChatAppWebInterface/UserService.asmx" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx">
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
       <s:element name="GetUsers">
         <s:complexType />
       </s:element>
@@ -229,7 +229,7 @@
   <wsdl:binding name="UserServiceSoap" type="tns:UserServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetUsers">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetUsers" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetUsers" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -238,7 +238,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="CreateUser">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/CreateUser" style="document" />
+      <soap:operation soapAction="http://tempuri.org/CreateUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -247,7 +247,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="EditUser">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/EditUser" style="document" />
+      <soap:operation soapAction="http://tempuri.org/EditUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -256,7 +256,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="DeleteUser">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/DeleteUser" style="document" />
+      <soap:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -265,7 +265,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SendFriendRequest">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/SendFriendRequest" style="document" />
+      <soap:operation soapAction="http://tempuri.org/SendFriendRequest" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -274,7 +274,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ApproveFriendRequest">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/ApproveFriendRequest" style="document" />
+      <soap:operation soapAction="http://tempuri.org/ApproveFriendRequest" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -283,7 +283,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetValidUser">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetValidUser" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetValidUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -292,7 +292,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetMyRequests">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetMyRequests" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetMyRequests" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -301,7 +301,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetMyFriends">
-      <soap:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetMyFriends" style="document" />
+      <soap:operation soapAction="http://tempuri.org/GetMyFriends" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -313,7 +313,7 @@
   <wsdl:binding name="UserServiceSoap12" type="tns:UserServiceSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetUsers">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetUsers" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/GetUsers" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -322,7 +322,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="CreateUser">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/CreateUser" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/CreateUser" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -331,7 +331,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="EditUser">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/EditUser" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/EditUser" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -340,7 +340,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="DeleteUser">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/DeleteUser" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -349,7 +349,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SendFriendRequest">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/SendFriendRequest" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/SendFriendRequest" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -358,7 +358,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ApproveFriendRequest">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/ApproveFriendRequest" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/ApproveFriendRequest" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -367,7 +367,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetValidUser">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetValidUser" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/GetValidUser" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -376,7 +376,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetMyRequests">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetMyRequests" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/GetMyRequests" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -385,7 +385,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetMyFriends">
-      <soap12:operation soapAction="http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetMyFriends" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/GetMyFriends" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -396,10 +396,10 @@
   </wsdl:binding>
   <wsdl:service name="UserService">
     <wsdl:port name="UserServiceSoap" binding="tns:UserServiceSoap">
-      <soap:address location="http://10.97.75.50/ChatAppWebInterface/UserService.asmx" />
+      <soap:address location="http://192.199.247.161/ChatAppService/UserService.asmx" />
     </wsdl:port>
     <wsdl:port name="UserServiceSoap12" binding="tns:UserServiceSoap12">
-      <soap12:address location="http://10.97.75.50/ChatAppWebInterface/UserService.asmx" />
+      <soap12:address location="http://192.199.247.161/ChatAppService/UserService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

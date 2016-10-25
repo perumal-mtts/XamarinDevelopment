@@ -1,0 +1,17 @@
+D:\Xamarin\ChatApp\ChatApp\bin\Release\ChatApp.dll
+D:\Xamarin\ChatApp\ChatApp\bin\Release\ChatApp.pdb
+D:\Xamarin\ChatApp\ChatApp\bin\Release\Xamarin.Forms.Core.dll
+D:\Xamarin\ChatApp\ChatApp\bin\Release\Xamarin.Forms.Platform.dll
+D:\Xamarin\ChatApp\ChatApp\bin\Release\Xamarin.Forms.Xaml.dll
+D:\Xamarin\ChatApp\ChatApp\bin\Release\Xamarin.Forms.Core.xml
+D:\Xamarin\ChatApp\ChatApp\bin\Release\Xamarin.Forms.Xaml.xml
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.csprojResolveAssemblyReference.cache
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.Views.UserListPage.xaml.g.cs
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.Views.UserPage.xaml.g.cs
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.Views.HomePage.xaml.g.cs
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.Views.LoginPage.xaml.g.cs
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.Views.OptionsPage.xaml.g.cs
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.Views.RequestListPage.xaml.g.cs
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.Views.MyFriends.xaml.g.cs
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.dll
+D:\Xamarin\ChatApp\ChatApp\obj\Release\ChatApp.pdb

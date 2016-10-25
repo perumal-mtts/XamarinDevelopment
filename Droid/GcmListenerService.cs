@@ -32,7 +32,7 @@ namespace ClientApp
 				.SetContentIntent(pendingIntent);
 
 			var notificationManager = (NotificationManager)GetSystemService(Context.NotificationService);
-			notificationManager.Notify(0, notificationBuilder.Build());
+			//notificationManager.Notify(0, notificationBuilder.Build());
 		}
 	}
 }

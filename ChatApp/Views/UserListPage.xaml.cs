@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using System.Linq;
 
 namespace ChatApp
 {
@@ -13,7 +14,8 @@ namespace ChatApp
 		protected async override void OnAppearing()
 		{
 			base.OnAppearing();
-			listView.ItemsSource = await App.UserManager.GetUsersAsync();
+			var listUsers =  await App.UserManager.GetUsersAsync();
+			listView.ItemsSource = listUsers.Where(x=>x.ID != App.LoggedUser.ID );
 		}
 
 		void OptionClickHandler(object sender, EventArgs e)

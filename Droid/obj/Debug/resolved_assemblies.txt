@@ -8,6 +8,8 @@ D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Core.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Data.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.EnterpriseServices.dll
+D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
+D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.ServiceModel.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Web.Services.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Xml.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
@@ -66,7 +68,6 @@ D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Threading.Timer.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Xml.ReaderWriter.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
-D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\Mono.Data.Tds.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\Mono.Security.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Transactions.dll
@@ -74,5 +75,4 @@ D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Net.Http.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.ComponentModel.DataAnnotations.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.ComponentModel.Composition.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Numerics.dll
-D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.ServiceModel.dll
 D:\Xamarin\ChatApp\Droid\obj\Debug\assemblies\System.Xml.Linq.dll

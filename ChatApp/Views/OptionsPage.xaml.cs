@@ -33,8 +33,10 @@ namespace ChatApp
 			switch (selectedOption)
 			{
 				case "Update Profile":
-				
 				case "ChangePassword":
+				{
+				}
+				break;
 				case "Logout":
 					{
 						App.LoggedUser = null;

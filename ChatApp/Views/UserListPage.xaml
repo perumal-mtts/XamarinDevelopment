@@ -16,7 +16,7 @@
 								<Label Text="{Binding Name}" YAlign="Center" />
 								<Label Text="{Binding EmailId}" YAlign="Center" />
 
-								<Button Image="plus.png" Clicked="FriendRequestClickHandler">
+								<Button Image="plus.png" Width="20" BackgroundColor="Green" Clicked="FriendRequestClickHandler">
 								</Button>
 						</StackLayout>
 					</ViewCell>

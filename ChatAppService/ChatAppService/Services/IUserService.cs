@@ -12,7 +12,6 @@ namespace ChatAppService.Services
 		void UpdateData(User item);
 		void DeleteData(string id);
 
-
 		void SendFriendRequest(FriendRequest friendRequest);
 		void ApproveFriendRequest(FriendRequest friendRequest);
 		void RejectFriendRequest(FriendRequest friendRequest);

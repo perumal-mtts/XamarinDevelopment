@@ -1,10 +1,1 @@
-D:\Xamarin\ChatApp\ChatAppConsole\bin\Debug\ChatAppConsole.exe.config
-D:\Xamarin\ChatApp\ChatAppConsole\bin\Debug\ChatAppConsole.exe
-D:\Xamarin\ChatApp\ChatAppConsole\bin\Debug\ChatAppConsole.pdb
-D:\Xamarin\ChatApp\ChatAppConsole\bin\Debug\ChatAppService.dll
-D:\Xamarin\ChatApp\ChatAppConsole\bin\Debug\Newtonsoft.Json.dll
-D:\Xamarin\ChatApp\ChatAppConsole\bin\Debug\ChatAppService.pdb
-D:\Xamarin\ChatApp\ChatAppConsole\bin\Debug\Newtonsoft.Json.xml
 D:\Xamarin\ChatApp\ChatAppConsole\obj\Debug\ChatAppConsole.csprojResolveAssemblyReference.cache
-D:\Xamarin\ChatApp\ChatAppConsole\obj\Debug\ChatAppConsole.exe
-D:\Xamarin\ChatApp\ChatAppConsole\obj\Debug\ChatAppConsole.pdb

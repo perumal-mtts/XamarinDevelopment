@@ -5,21 +5,27 @@
 			 x:Class="ChatApp.UserPage"
 			 Title="Register">
   <ContentPage.Content>
-    <StackLayout VerticalOptions="StartAndExpand">
+    <StackLayout VerticalOptions="CenterAndExpand">
 
       <Label Text="Name" />
-      <Entry x:Name="nameEntry" Text="{Binding Path=Name}" Placeholder="Name" />
-
+      <Entry x:Name="nameEntry" Text="{Binding Path=Name}" Placeholder="Name">
+	 </Entry>
       <Label Text="Email Id" />
-      <Entry x:Name="emailEntry" Text="{Binding Path=EmailId}" Placeholder="Email Id"  />
+      <Entry x:Name="emailEntry" Text="{Binding Path=EmailId}" Placeholder="Email Id">
+		  <Entry.Behaviors>
+		    <local:EmailValidatorBehavior  x:Name="emailValidator"/>
+		  </Entry.Behaviors>
+	 </Entry>
 
       <Label Text="Password" />
-      <Entry x:Name="pwdEntry" Text="{Binding Path=Password}" Placeholder="Password"  />
+      <Entry x:Name="pwdEntry" Text="{Binding Path=Password}" Placeholder="Password">
+	 </Entry>
 
       <Label Text="Confirm password" />
-      <Entry x:Name="conPwdEntry" Placeholder="Confirm Password"  />
+      <Entry x:Name="conPwdEntry" Placeholder="Confirm Password">
+	 </Entry>
 
-      <Button Text="Register" Clicked="RegisterClickHandler" />
+      <Button Text="Register" BackgroundColor="#77D065" Clicked="RegisterClickHandler" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

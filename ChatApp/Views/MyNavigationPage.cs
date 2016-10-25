@@ -12,15 +12,7 @@ namespace ChatApp
 			
 		}
 
-		protected override bool OnBackButtonPressed ()
-		{
-			if (App.Instance.DoBack) 
-			{
-				return base.OnBackButtonPressed ();
-			}
-
-			return true;
-		}
+	
 	}
 }
 

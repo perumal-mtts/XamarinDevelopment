@@ -12,12 +12,12 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>ChatApp.Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,6 +74,8 @@
     <Reference Include="Xamarin.GooglePlayServices.Gcm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Xamarin.GooglePlayServices.Gcm.26.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Gcm.dll</HintPath>
     </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GcmListenerService.cs" />
@@ -129,10 +131,10 @@
     <WebReferences Include="Web References" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://10.97.75.50/ChatAppWebInterface/UserService.asmx">
+    <WebReferenceUrl Include="http://192.199.247.161/ChatAppService/UserService.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\ChatAppService</RelPath>
-      <UpdateFromURL>http://10.97.75.50/ChatAppWebInterface/UserService.asmx</UpdateFromURL>
+      <UpdateFromURL>http://192.199.247.161/ChatAppService/UserService.asmx</UpdateFromURL>
     </WebReferenceUrl>
   </ItemGroup>
 </Project>

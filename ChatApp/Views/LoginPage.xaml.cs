@@ -12,6 +12,13 @@ namespace ChatApp
 			InitializeComponent();
 		}
 
+		protected override void OnAppearing ()
+		{
+			nameEntry.Completed += (object sender, EventArgs e) => { pwdEntry.Focus(); };
+			pwdEntry.Completed += (object sender, EventArgs e) => { loginButton.Focus(); };
+			base.OnAppearing ();
+		}
+
 		async void LoginClickHandler(object sender, EventArgs e)
 		{
 			try

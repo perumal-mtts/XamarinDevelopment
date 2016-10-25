@@ -21,12 +21,12 @@ namespace ChatApp.Droid.ChatAppService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XamarinStudio", "4.0.0.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Web.Services.WebServiceBindingAttribute(Name="UserServiceSoap", Namespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx")]
+    [System.Web.Services.WebServiceBindingAttribute(Name="UserServiceSoap", Namespace="http://tempuri.org/")]
     public partial class UserService : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
         /// <remarks/>
         public UserService() {
-            this.Url = "http://10.97.75.50/ChatAppWebInterface/UserService.asmx";
+            this.Url = "http://192.199.247.161/ChatAppService/UserService.asmx";
         }
         
         public UserService(string url) {
@@ -34,7 +34,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetUsers", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetUsers", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public User[] GetUsers() {
             object[] results = this.Invoke("GetUsers", new object[0]);
             return ((User[])(results[0]));
@@ -52,7 +52,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/CreateUser", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void CreateUser(User item) {
             this.Invoke("CreateUser", new object[] {
                         item});
@@ -70,7 +70,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/EditUser", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EditUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void EditUser(User item) {
             this.Invoke("EditUser", new object[] {
                         item});
@@ -88,7 +88,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/DeleteUser", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DeleteUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void DeleteUser(string id) {
             this.Invoke("DeleteUser", new object[] {
                         id});
@@ -106,7 +106,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/SendFriendRequest", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SendFriendRequest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void SendFriendRequest(FriendRequest request) {
             this.Invoke("SendFriendRequest", new object[] {
                         request});
@@ -124,7 +124,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/ApproveFriendRequest", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ApproveFriendRequest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void ApproveFriendRequest(FriendRequest request) {
             this.Invoke("ApproveFriendRequest", new object[] {
                         request});
@@ -142,7 +142,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetValidUser", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetValidUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public User GetValidUser(User user) {
             object[] results = this.Invoke("GetValidUser", new object[] {
                         user});
@@ -162,7 +162,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetMyRequests", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetMyRequests", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public User[] GetMyRequests(string fromUserId) {
             object[] results = this.Invoke("GetMyRequests", new object[] {
                         fromUserId});
@@ -182,7 +182,7 @@ namespace ChatApp.Droid.ChatAppService {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://10.97.75.50/ChatAppWebInterface/UserService.asmx/GetMyFriends", RequestNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", ResponseNamespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetMyFriends", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public User[] GetMyFriends(string id) {
             object[] results = this.Invoke("GetMyFriends", new object[] {
                         id});
@@ -207,7 +207,7 @@ namespace ChatApp.Droid.ChatAppService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
     public partial class User {
         
         /// <remarks/>
@@ -228,7 +228,7 @@ namespace ChatApp.Droid.ChatAppService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
     public partial class FriendRequest {
         
         /// <remarks/>
@@ -244,7 +244,7 @@ namespace ChatApp.Droid.ChatAppService {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XamarinStudio", "4.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://10.97.75.50/ChatAppWebInterface/UserService.asmx")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
     public enum FriendRequestStatus {
         
         /// <remarks/>
